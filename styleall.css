@@ -3,6 +3,9 @@
     margin: 0;
   
   }
+  .opciones{
+    display: none;
+  }
   body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -117,16 +120,6 @@
     font-size: 400%;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
   }
-.tittle{
-    color: white;
-    padding: 10% 3%;
-    font-family: "Ultra", serif;
-    position: absolute;
-    top: 20%;
-    left: 3%;
-    font-size: 400%;
-    text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-  }
   .h6{
     font-family: 'Russo One', sans-serif;
     color: white;
@@ -190,4 +183,71 @@ footer{
     margin-right: 2%;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     transition-duration: 2000ms;
+}
+
+@media(max-width:1024px){
+ .nav-links li a {
+        font-size: 14px;
+    }   
+    .h6{
+        font-size: 150%;
+    }
+    .ig{
+        font-size: 200%;
+    }
+    .header{
+        font-size:24px ;
+    }
+    .img{
+        width: 90px;
+    }
+    .imgL{
+        width: 65px;
+    }
+}
+@media(max-width:867px){
+    .bars{
+        font-size: 30px;
+        margin: 0;
+        z-index: 3;
+    }
+    .up{
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        gap: 50px;
+        padding:100% 50px;
+        padding-top:70px;
+        background-color: #1a1a1a;
+    }
+    .opciones{
+        display: flex;
+        cursor: pointer;
+    }
+    .nav-links li a {
+        font-size: 18px;
+    }
+    .header{
+        font-size:22px ;
+    }
+    .img{
+        width: 90px;
+    }
+    .imgL{
+        width: 64px;
+    }
+    .dawn{
+        padding: 30px;
+    }
+    .dawn li a{
+        margin: 10px;
+    }
+}
+@media(max-width:567px){
+    .nav-links li a {
+        font-size: 14px;
+    }
 }

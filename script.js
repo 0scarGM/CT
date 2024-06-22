@@ -12,3 +12,16 @@ function scrollFunction() {
         document.getElementById("header").classList.remove("header")
     }
 }
+let opciones=document.getElementById("opciones")
+let n=0
+if(opciones.style="flex"){
+opciones.addEventListener("click",()=>{
+    if(n==0){
+        document.getElementById("up").style.display="flex"
+        n++
+    }else if(n>0){
+        document.getElementById("up").style.display="none"
+        n=0
+    }
+})
+}
