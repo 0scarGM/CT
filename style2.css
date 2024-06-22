@@ -1,0 +1,28 @@
+body {
+    background-image: url('img/hp.jpg');
+  }
+.tittle{
+    top: 20%;
+    left: 3%;
+  }
+  h3{
+    color: #fff;
+    font-family: "Ultra", serif;
+    text-align: justify;
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+  .content{
+    margin-top: 50%;
+    display: grid;
+    width: 100%;
+    background-color: #1a1a1ab4;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 500px 550px 500px 400px 400px;
+}
+.s1{
+    grid-area: 1/1/2/4;
+    margin: 12%;
+    margin-left: 20%;
+    margin-right: 5%;
+}
