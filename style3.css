@@ -1,0 +1,187 @@
+.back{
+    background-image: url('img/michiel-boswijk-HjFTel5Y3WY-unsplash.jpg');
+  }
+.tittle{
+    top: 20%;
+    left: 3%;
+  }
+h2{
+    color: #1a1a1a;
+    font-family: "Ultra", serif;
+    text-align: justify;
+    font-size: 35px;
+}
+h3{
+    color: #fff;
+    font-family: "Ultra", serif;
+    text-align: justify;
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+h4{
+    color: #fff;
+    font-family: 'Russo One', sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition-duration: 1500ms;
+}
+p,.text{
+    color: #fff;
+    font-family: "Averia Serif Libre", serif;
+    text-align: justify;
+    font-size: 20px;
+}
+.text{
+    color: #1a1a1a;
+    margin: 40px;
+}
+.content{
+    display: grid;
+    width: 100%;
+    margin-top: 50%;
+    background-color: #1a1a1ab4;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: auto;
+}
+.s1{
+    background-size: cover;
+    background-position: center;
+    margin: 5% 15%;
+    border-radius: 40px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.s1{
+    grid-area: 1/1/2/4;
+    background-image: url('img/brian-suman-8pawcyWIxtw-unsplash.jpg');
+}
+.s2{
+    margin: 12% 20%;
+    margin-left: 5%;
+}
+.s2{
+    grid-area: 1/4/2/7;
+}
+.s3{
+    grid-area: 2/1/3/7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.bd{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 2000ms;
+}
+.b{
+    background-image: url('img/ecologia.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(10px);
+    height: 170px;
+    width: 13%;
+    border-radius: 30px;
+    margin: 3% 0;
+    transition-duration: 1000ms;
+}
+.b1{
+    background-image: url('img/takamine.jpg');
+}
+.b2{
+    background-image: url('img/bajo.jpg');
+}
+.b3{
+    background-image: url('img/acordeon.jpg');
+}
+.b4{
+    background-image: url('img/bateria.jpg');
+}
+.b5{
+    background-image: url('img/tololoche.jpg');
+}
+.b6{
+    background-image: url('img/trombon.jpg');
+}
+.bd:hover {
+    border-radius: 80px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+}
+.bd:hover h4{
+    opacity: 1;
+}
+.b:hover{
+    border-radius: 80px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-top: 6%;
+    margin-bottom: 0;
+}
+.bC{
+    border-radius: 80px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-top: 6%;
+    margin-bottom: 0;
+}
+.bdC{
+    border-radius: 80px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    backdrop-filter: blur(5px);
+}
+.s4{
+    grid-area: 3/1/4/7;
+    background-color: #fff;
+    margin: 0 5%;
+    margin-bottom: 5%;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+.descripcion{
+    grid-area: 1/1/2/3;
+}
+.funcion{
+    grid-area: 2/1/3/2;
+}
+.uso{
+    grid-area: 2/2/3/3;
+}
+.imagen{
+    grid-area: 1/3/3/4;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    margin: 5%;
+    background-image: url('img/ecologia.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.guitarra{
+    background-image: url('img/guitarra2.jpg');
+}
+.bajo{
+    background-image: url('img/polygon-group-0fJKvGUDztg-unsplash.jpg');
+}
+.acordeon{
+    background-image: url('img/acordeon2.jpg');
+}
+.bateria{
+    background-image: url('img/raychan-2m06ystc2d4-unsplash.jpg');
+}
+.tololoche{
+    background-image: url('img/tololoche2.jpg');
+}
+.trombon{
+    background-image: url('img/trombon2.jpg');
+}
