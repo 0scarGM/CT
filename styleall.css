@@ -14,7 +14,6 @@
     left: 0px;
     bottom: 0px;
     right: 0px;
-    background-image: url('img/1341944.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
@@ -185,7 +184,6 @@ footer{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     transition-duration: 2000ms;
 }
-
 @media(max-width:1024px){
     .tittle{
         font-size: 300%;
@@ -276,10 +274,11 @@ footer{
 }
 @media(max-width:567px){
     .content{
-        margin-top: 135%;
+        margin-top: 220%;
     }
     .tittle{
         font-size: 200%;
+        padding: 40% 3%;
     }
     .nav-links li a {
         font-size: 14px;
