@@ -1,0 +1,124 @@
+.content2{
+    display: grid;
+    width: 100%;
+    background-color: #1a1a1a;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 100vh;
+}
+.s1{
+    grid-area: 1/1/2/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.s2{
+    grid-area: 1/2/2/3;
+    background-image: url('img/1341952.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+form{
+    text-align: center;
+    margin: 0;
+    width: 70%;
+}
+p{
+    text-align: justify;
+    padding-top: 5%;
+    padding-left: 5%;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    font-family: 'Roboto', sans-serif;
+}
+.input{
+    font-size: 20px;
+    border: none;
+    outline-color:#131313;
+    background-color: #32323291;
+    border-radius: 30px;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 2%;
+    width: 90%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    font-family: 'Roboto', sans-serif;
+}
+.check{
+    width: 17px;
+    height: 17px;
+}
+.rob{
+    padding-top:3% ;
+    padding-bottom: 5%;
+}
+hr{
+    border: solid;
+    border-radius: 5px;
+    margin: 1%;
+    border-color: #272727;
+    border-width: 3px;
+}
+.a{
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 24px;
+}
+h1{
+    font-family: 'Russo One', sans-serif;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+.message{
+    margin: 0 3%;
+    padding: 2%;
+    border-radius: 30px;
+    background-color:  rgba(255, 0, 0, 0.2);
+}
+.g{
+    background-color: rgba(187, 255, 183, 0.5); 
+}
+.mp{
+    text-align: center;
+    padding-top:0;
+}
+.submit{
+    font-size: 20px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(0, 0, 0, 0.6);
+    background-color: rgb(163, 73, 73);
+    border-radius: 30px;
+    padding: 2%;
+    text-align: center;
+    width: 93%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition-duration: 800ms;
+}
+.submit:hover{
+    cursor: pointer;
+    font-size: 24px;
+}
+.submit:active{
+    background-color: rgba(187, 255, 183, 0.1);
+}
+@media(max-width:867px){
+    .input{
+        background-color: #323232bd;
+    }
+    p{
+        color: rgba(255, 255, 255, 0.7);
+    }
+    form{
+        width: 90%;
+    }
+    .s1{
+        grid-area: 1/1/2/3;
+        z-index: 2;
+    }
+    .s2{
+        grid-area: 1/1/2/3;
+        z-index: 1;
+    }
+}

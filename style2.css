@@ -12,13 +12,11 @@ h3{
     font-size: 70px;
     margin-bottom: 20px;
 }
-.content,.content2,.content3{
+.content,.content2,.content3,.content4,.content5,.content10{
     display: grid;
     width: 100%;
-    margin-top: 10%;
     background-color: #1a1a1ab4;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 550px/*este es de low fade*/  600px/*este es el de serch*/530px;
 }
 .content{
   margin-top: 50%;
@@ -38,57 +36,123 @@ p{
 }
 .e1{
   grid-area: 1/1/2/4;
-  margin: 15% 5% 0 20%;
+  margin: 15% 5% 15% 20%;
+  z-index: 2;
 }
 .nata{
   color: rgb(0, 255, 8);
   font-family:  "Creepster", system-ui;
   font-size: 500%;
+  text-shadow: 5px 4px 5px rgb(0, 0, 0);
 }
 .fama{
   text-align: center;
+}
+.s5{
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0;
+  padding-bottom: 0;
+  z-index: 3;
 }
 .e2{
   background-image: url('img/natamontana.jpg');
   grid-area: 1/4/2/7;
   background-size: cover;
-  margin: 5% 15%;
+  margin: 5% 20%;
   border-radius: 40px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 .e3{
-  grid-area: 2/1/3/4;
-  margin: 10% 0 5% 25%;
+  grid-area: 2/1/3/7;
+  margin: 0;
+  z-index: 3;
+  margin: 5% 20%;
 }
 .e4{
   background-image: url('img/eldiablo.jpeg');
-  grid-area: 2/4/2/7;
+  grid-area: 2/1/2/7;
   background-size: cover;
-  margin: 5% 15%;
-  border-radius: 40px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-
+  background-position: center;
+  filter: drop-shadow(0 -10px 10px rgba(0, 0, 0, 0.5)) brightness(0.2) ;
 }
-.e5,.e6,.e7,.e8{
-padding: 2% 10%;
-display: flex;
-gap: 20px;
+.Adest{
+  color: #fff;
+  font-size: 85px;
+  font-family: "Anton", sans-serif;
 }
-.e5{
-grid-area: 3/1/4/7;
-}
-.e6{
+.ee5{
   grid-area: 4/1/5/7;
+  display: flex;
+  overflow-x: auto; 
+  white-space: nowrap; 
+  margin: 5% 8%;
+  z-index: 3;
 }
-.e7{
-  grid-area: 5/1/6/7;
+.e9{
+  grid-area: 3/1/8/7;
+  background-color: #1a1a1a;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+  z-index: 2;
 }
-.e8{
-  grid-area: 6/2/7/7;
+.imgD{
+  background-color: black;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  height: 350px;
+  width: 300px;
+  max-width: 100%;
+  transition-duration: 1000ms;
+  margin-right: 10px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  position: relative;
+}
+.Dimg{
+  background-size: 100%;
+  height: 250px;
+  width: 300px;
+  background-size: cover;
+  transition-duration: 2000ms;
+  margin-right: 10px;
+  margin: 0% 10%;
+  top: 0;
 }
 .img1{
+  background-image: url('img/todoesdifente.jpg');
+}
+.img2{
+  background-image: url('img/corridostb.jpg');
+}
+.img3{
+  background-image: url('img/minuevoyo.jpg');
+}
+.img4{
+  background-image: url('img/corridostbv2.jpg');
+}
+.img5{
+  background-image: url('img/traptumbado.jpeg');
+}
+.img6{
+  background-image: url('img/soyelnata.jpg');
+}
+.img7{
+  background-image: url('img/lastrestorres.jpg');
+}
+.img8{
+  background-image: url('img/nataalbum.jpg');
+}
+.img9{
+  background-image: url('img/amis20.jpg');
+}
+.img10{
+  background-image: url('img/natakong.jpeg');
+}
+.img11{
   background-image:url('img/natamontana.jpg') ;
-  margin: 0% 12%;
 }
 .icono{
   font-size: 30px;
@@ -97,29 +161,15 @@ grid-area: 3/1/4/7;
 .iconoa{
   position: absolute;
   bottom: 60px;
-  right: 8px;
+  right: 0px;
   cursor: pointer;
   transition-duration: 1s;
 }
-.imgD{
-  width: 400px;
-  height: 350px;
-  background-color: black;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-  position: relative;
-  align-self: center;
+.imgD:hover{
+  filter: brightness(70%);
 }
-.Dimg{
-  background-size: 100%;
-  width: auto;
-  height: 300px;
-  transition-duration: 2000ms;
-  top: 0;
-}
-.imgD:hover .iconoa:hover{
-  background-size: 110%;
-  transform: translateY(-10px);
-  transform: scale(1.25);
+.iconoa:hover{
+  transform: translateY(-10px) scale(1.15);
 }
 h5{
   position: absolute;
@@ -141,135 +191,278 @@ h6{
 .conten2{
   margin-top:0;
 }
+.s1,.s2{
+  z-index: 2;
+}
 .s1{
   grid-area: 1/1/2/4;
-  margin: 10% 5% 0 15%;
+  padding: 10% 5% 10% 15%;
+}
+.pDarck{
+  color: #1a1a1a;
 }
 .s2{
   background-image: url(img/dan.jpg);
+  background-position: center;
   grid-area: 1/4/2/7;
   border-radius: 40px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-  margin: 8% 10%;
+  margin: 5% 15%;
   background-size: cover;
+}
+.s8{
+  background-image: url(img/dan.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  filter: drop-shadow(0 -10px 10px rgba(0, 0, 0, 0.5)) brightness(0.2) ;
+  grid-area: 1/1/2/7;
+  z-index: 0;
+}
+.s7{
+  grid-area: 2/1/3/7;
+  background-color: whitesmoke;
+  z-index: 0;
 }
 .s3{
   grid-area: 2/1/2/6;
-  margin: 10% 5% 0 20% ;
-    grid-area: 12/1/1/1
+  margin: 0 5% 5% 20%;
+    z-index: 1;
+}
+.s4{
+  background-color: #1a1a1a;
+  grid-area: 4/1/5/7;
+  padding: 2% 10%;
+  display: flex;
+  gap: 20px;
+  z-index: 3;
 }
 .s5{
-  grid-area: 1/1/1/1
+  grid-area: 3/1/4/7;
 }
 .s6{
- grid-area:1/1/1/1
+  grid-area: 3/1/5/7;
+  background-color: #1a1a1a;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+.r2,.r7{
+  background-image: url('img/JUNIOR\ H\ ❤️.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+.r7{
+  filter: drop-shadow(0 -10px 10px rgba(0, 0, 0, 0.5)) brightness(0.2) ;
+  grid-area: 1/1/2/7;
+  z-index: 0;
+}
+.r2{
+  grid-area: 1/4/2/7;
+  border-radius: 30px;
+  margin: 5% 15%;
+  z-index: 2;
+}
+.r4{
+  grid-area: 2/1/3/7;
+  background-color: #1a1a1ae0;
+}
+.o2{
+  background-image: url('img/oscar-maydon.jpg');
+}
+.o3{
+  grid-area: 2/1/3/7;
+  background-color: rgba(255, 0, 251, 0.399);
+}
+.v3{
+  background-color: rgba(0, 48, 91, 0.612);
+}
+.v2{
+  background-image: url('img/bape.jpg');
+}
+.vv2{
+  background-image: url('img/ovi.jpg');
+}
+.imgs1{
+  background-image: url(img/proceso.jpeg);
+}
+.imgs2{
+  background-image: url(img/dinfierno.jpeg);
+}
+.imgv1{
+  background-image: url(img/aseredeasere.jpeg);
+}
+.imgv2{
+  background-image: url(img/retumban2.jpeg);
+}
+.imgv3{
+  background-image: url(img/las3torres.jpeg);
+}
+.imgv4{
+  background-image: url(img/buenviaje.jpeg);
+}
+.imgv5{
+  background-image: url(img/amen.jpeg);
 }
 .tittle2{
   text-align: center;
-  font-family: "Rock Salt", cursive;
+  font-family: 'Rock Salt', cursive;
   font-size: 400%;
   color: rgb(253, 2, 2);
   text-shadow: 5px 5px rgba(251, 117, 117, 0.996);
 }
-
-.h {
+.tittle3{
+  text-align: center;
+  font-size: 400%;
+  color: rgb(28, 206, 28);
+  text-shadow: 5px 5px rgba(193, 251, 117, 0.996);
+}
+.tittle45{
   color: #fff;
   font-family: "Kaushan Script", cursiva;
   text-align: justify;
   font-size: 70px;
-  margin-bottom: 20px;
   text-shadow: 10px 8px rgba(0, 0, 0, 0.996);
 }
-
-
-
-.r1 {
-  grid-area: 1/1/2/4;
-  margin: 12%;
-  margin-left: 20%;
-  margin-right: 5%;
-  color: #fff;
-}
-
+#pa,
 #pe,
 #pi,
 #po,
-#pa,
 #pu {
   font-family: "Averia Serif Libre", serif;
   text-align: justify;
   color: #fff;
 }
-
-.r2 {
-  background-image: url('img/J\ U\ N\ I\ O\ R\ H.jpeg ');
-  grid-area: 1/4/2/6;
-  background-size: cover;
-  margin: 5% 2%;
-  border-radius: 40px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-  height: 550px;
+.re3{
+  background-image: url(img/Herencia\ de\ Patrones.jpeg);
 }
-
-.r3 {
-  grid-area: 2/1/3/4;
-  margin: 25%;
-  margin-left: 20%;
-  margin-right: 5%;
-  color: #fff;
+.re2{
+  background-image: url(img/bae.jpeg);
 }
-
-.r4 {
-  background-image: url('img/JUNIOR\ H\ ❤️.jpeg');
-  grid-area: 3/4/2/7;
-  background-size: cover;
-  margin: 45% 15%;
-  border-radius: 40px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-  height: 450px;
-  width: 450px;
+.imgj1{
+  background-image: url('img/Mi Vida en un Cigarro - Junior H.jpeg');
 }
-
-.r5 {
-  grid-area: 4/1/5/4;
-  margin: 12%;
-  margin-left: 20%;
-  margin-right: 5%;
-  color: #fff;
-  align-items: center;
+.imgj2{
+  background-image: url("img/Cruisin' with Junior H.jpeg");
 }
-
-/* .r5 {
-  grid-area: 5/1/6/4;
-  margin: 12%;
-  margin-left: 20%;
-  margin-right: 5%;
-  color: #fff;
-} */
-
-.album,
-.album2 {
+.imgj3{
+  background-image: url('img/JUNIOR H DEBUTS HIS NEW ALBUM $AD BOYZ 4 LIFE II.jpeg');
+}
+.imgj4{
+  background-image: url("img/Atrapado\ en\ un\ Sueño\ de\ Junior\ H\ en\ Apple\ Music.jpeg");
+}
+.imgj5{
+  background-image: url("img/descarga\ \(21\).jpeg");
+}
+.imgj6{
+  background-image: url("img/lastrestorres.jpg");
+}
+.imgj7{
+  background-image: url("img/$ad\ Boyz\ 4\ Life.jpeg");
+}
+.imgj8{
+  background-image: url("img/descarga\ \(20\).jpeg");
+}
+.imgo1{
+  background-image: url('img/gxl3.jpg');
+}
+.imgo2{
+  background-image: url('img/distorcion.jpg');
+}
+.imgej1{
+  background-image: url('img/envivodesdewounded.jpeg');
+}
+.imgej2{
+  background-image: url("img/Palasvibras.jpg");
+}
+.imgej3{
+  background-image: url('img/palosqueconocen.jpg');
+}
+.imgej4{
+  background-image: url('img/hpeveryting.jpg');
+}
+.imgej5{
+  background-image: url('img/zorryofthewait2.jpg');
+}
+.imgej6{
+  background-image: url('img/Imagen2.jpg');
+}
+.tittle454{
+  color: #7a229a;
+  font-family: "Rock Salt", cursiva;
+  text-align: justify;
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-shadow: 10px 8px rgba(87, 11, 114, 0.996);
+}
+.video{
+  z-index: 2;
   display: flex;
-  margin: 5px;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  background-color: #1a1a1aed;
 }
-
-.album img,
-.album2 img {
-  width: 200px;
-  height: auto;
-  border-radius: 10px;
-  transition: transform 0.3s ease, filter 0.3s ease;
+@media(max-width:1024px){
+.nata,.tittle,.tittle2,.tittle45,.oscar,.tittle3,.tittle454,.Adest,.tittle454{
+  font-size: 60px;
+  }
+  .oscar,.tittle454{
+    font-size: 50px;
+  }
+  .pe,.pDarck,.pi,.colab,p{
+   font-size: 16px;
+  }
 }
-
-.album img:hover,
-.album2 img:hover {
-  transform: scale(1.1);
-  filter: brightness(70%);
+@media(max-width:867px){
+  .nata,.tittle,.tittle2,.tittle45,.oscar,.tittle3,.tittle454,.Adest,.tittle454{
+    font-size: 45px;
+    }
+    .tittle454{
+      font-size: 40px;
+    }
+  h5{
+  
+  }
+  h6{
+    
+  }
+  .imgD{
+    height: 300px;
+    width: 250px;
+  }
+  .Dimg{
+    height: 200px;
+    width: 250px;
+  }
+  .e1{
+    grid-area: 1/1/2/7;
+    margin: 10%;
+  }
+  .e2,.s2,.r2{
+    grid-area: 2/1/3/7;
+    height: 300px;
+  }
+  .e3{
+    grid-area: 3/1/4/7;
+  }
+  .r7,.s8{
+    grid-area: 1/1/3/7;
+  }
+  .s5{
+    grid-area: 4/1/5/7;
+  }
+  .ee5{
+    grid-area: 5/1/6/7;
+  }
+  .e9{
+    grid-area: 4/1/6/7;
+  }
+  .o3,.e4,.s7{
+    grid-area: 3/1/4/7;
+  }
 }
-
-.r5 h3 {
-  text-align: center;
+@media(max-width:567px){
+  .nata,.tittle,.tittle2,.tittle45,.oscar,.tittle3,.tittle454,.Adest,.tittle454{
+    font-size: 35px;
+    }
+    .tittle454,.tittle2{
+      font-size: 30px;
+    }
 }
-
